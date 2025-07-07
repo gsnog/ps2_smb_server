@@ -149,7 +149,7 @@ Se você usa `ufw` ou `firewalld`, permita o tráfego Samba:
     * Comandos de exemplo para mover um jogo para a pasta `DVD`:
         ```bash
         cd /srv/ps2games
-        sudo mkdir -p DVD # Cria a pasta DVD se não existir
+        sudo mkdir -p DVD 
         sudo mv "Grand Theft Auto - San Andreas (NTSC-U SLUS-20946).iso" DVD/
         ```
 
@@ -185,7 +185,7 @@ Para verificar o tráfego de rede e depurar problemas:
 1.  **Instale o Wireshark** na sua VM Linux:
     ```bash
     sudo apt install wireshark
-    sudo usermod -a -G wireshark $USER # Saia e faça login novamente após isso
+    sudo usermod -a -G wireshark $USER 
     ```
 2.  Inicie o Wireshark, selecione sua interface de rede (`enp0s3`) e comece a capturar.
 3.  Use o filtro `smb` para visualizar apenas o tráfego do Samba enquanto tenta acessar os jogos no PS2.
