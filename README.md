@@ -178,7 +178,7 @@ Se você usa `ufw` ou `firewalld`, permita o tráfego Samba:
 8.  **Salve as Configurações** novamente.
 9.  Na tela **ETH Games** do OPL, pressione **START** ou **TRIÂNGULO** para forçar a atualização da lista de jogos. Se o jogo não aparecer, reinicie o PS2 completamente.
 
-### 6. Monitoramento e Depuração (Opcional)
+### 6. Monitoramento e Depuração
 
 Para verificar o tráfego de rede e depurar problemas:
 
