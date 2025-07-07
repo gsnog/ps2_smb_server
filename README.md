@@ -190,4 +190,32 @@ Para verificar o tráfego de rede e depurar problemas:
 2.  Inicie o Wireshark, selecione sua interface de rede (`enp0s3`) e comece a capturar.
 3.  Use o filtro `smb` para visualizar apenas o tráfego do Samba enquanto tenta acessar os jogos no PS2.
 
----
+### 7. Divisão de Tarefas para Configuração de Servidor Samba para PS2 com OPL:
+
+Arben Tafili: Configuração Inicial da Máquina Virtual e Rede.
+
+Responsável por configurar a Máquina Virtual (VM) em modo "Adaptador em Bridge" para comunicação direta com o PS2.
+
+Define um endereço IP estático para a VM, garantindo que o PS2 a encontre consistentemente na rede.
+
+Giovana Nogueira: Instalação e Configuração do Servidor Samba.
+
+Encarregada de instalar o Samba na VM.
+
+Cria a pasta de compartilhamento (/srv/ps2games) e configura as permissões.
+
+Edita o arquivo smb.conf para compatibilidade com SMBv1 (essencial para o OPL) e define o compartilhamento [PS2SMB].
+
+Reinicia e habilita os serviços Samba.
+
+Enzo Pavaneli: Preparação dos Jogos e Configuração do PS2 (OPL).
+
+Prepara os jogos em formato .iso, renomeando-os com o ID do jogo e os organiza nas pastas DVD/ ou CD/ dentro do compartilhamento Samba.
+
+Configura o Open PS2 Loader (OPL) no PS2, definindo o IP estático do console e os detalhes do servidor SMB, como o IP da VM e o nome do compartilhamento (PS2SMB).
+
+Sofia Recreio: Configuração de Firewall e Monitoramento/Depuração.
+
+Verifica e configura o Firewall (UFW ou Firewalld) na VM para permitir o tráfego do Samba.
+
+Instala o Wireshark para monitorar o tráfego de rede e auxiliar na depuração de problemas, garantindo que a comunicação entre o PS2 e o servidor Samba esteja ocorrendo corretamente.
