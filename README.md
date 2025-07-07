@@ -219,3 +219,8 @@ Sofia Recreio: Configuração de Firewall e Monitoramento/Depuração.
 Verifica e configura o Firewall (UFW ou Firewalld) na VM para permitir o tráfego do Samba.
 
 Instala o Wireshark para monitorar o tráfego de rede e auxiliar na depuração de problemas, garantindo que a comunicação entre o PS2 e o servidor Samba esteja ocorrendo corretamente.
+
+
+### 8. Video de Denonstração
+
+Link: https://youtu.be/wiEo0yIC6C0
