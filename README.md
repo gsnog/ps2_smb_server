@@ -221,6 +221,6 @@ Verifica e configura o Firewall (UFW ou Firewalld) na VM para permitir o tráfeg
 Instala o Wireshark para monitorar o tráfego de rede e auxiliar na depuração de problemas, garantindo que a comunicação entre o PS2 e o servidor Samba esteja ocorrendo corretamente.
 
 
-### 8. Video de Denonstração
+### 8. Video de Demonstração
 
 Link: https://youtu.be/wiEo0yIC6C0
